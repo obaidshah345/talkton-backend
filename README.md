@@ -76,20 +76,20 @@ This is the backend service for Talkton, a Twitter-like application where users 
 
 ## Scalability Considerations
 ## Database
-    - **Current Setup: Using a JSON file for simplicity and ease of setup.
-    - **Production: Switch to a scalable database solution like MongoDB, PostgreSQL, or Firebase Firestore to handle larger datasets and more complex queries.
+    Current Setup: Using a JSON file for simplicity and ease of setup.
+    Production: Switch to a scalable database solution like MongoDB, PostgreSQL, or Firebase Firestore to handle larger datasets and more complex queries.
 ## Real-Time Updates
-    - **Current Setup: Pusher for real-time updates.
-    - **Production: Pusher scales well, but in case the scope of this project is going to increase to millions of users in the future then consider using managed 
-      services like AWS AppSync, Firebase Realtime Database, or custom WebSocket servers for more control.
+    Current Setup: Pusher for real-time updates.
+    Production: Pusher scales well, but in case the scope of this project is going to increase to millions of users in the future then consider using managed 
+                services like AWS AppSync, Firebase Realtime Database, or custom WebSocket servers for more control.
 ## API Rate Limiting
-    - **Implement rate limiting with middleware like express-rate-limit to prevent abuse and ensure fair usage.
+    Implement rate limiting with middleware like express-rate-limit to prevent abuse and ensure fair usage.
 ## Load Balancing
-    - **Use a load balancer (e.g., AWS ELB, NGINX) to distribute incoming traffic across multiple server instances.
+    Use a load balancer (e.g., AWS ELB, NGINX) to distribute incoming traffic across multiple server instances.
 ## Caching
-    - **Use caching strategies with Redis or in-memory caching for frequently accessed data to reduce load on the database.
+    Use caching strategies with Redis or in-memory caching for frequently accessed data to reduce load on the database.
 ## Dockerization
-     - Containerize the application using Docker to ensure consistency across different environments and simplify deployment.
+     Containerize the application using Docker to ensure consistency across different environments and simplify deployment.
 ## CI/CD
-    - **Set up continuous integration and continuous deployment pipelines to automate testing, building, and deployment of the application.
+    Set up continuous integration and continuous deployment pipelines to automate testing, building, and deployment of the application.
 
