@@ -39,7 +39,7 @@ This is the backend service for Talkton, a Twitter-like application where users 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/talkton-backend.git
+    git clone https://github.com/obaidshah345/talkton-backend.git
     cd talkton-backend
     ```
 
