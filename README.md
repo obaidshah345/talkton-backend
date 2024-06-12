@@ -74,21 +74,6 @@ This is the backend service for Talkton, a Twitter-like application where users 
 - **POST /api/talks/:id/like**: Like a talk
 - **POST /api/talks/:id/unlike**: Unlike a talk
 
-### Sample `talks.json`
-
-```json
-[
-  {
-    "id": "1",
-    "content": "This is the first talk",
-    "likesCount": 0
-  },
-  {
-    "id": "2",
-    "content": "This is the second talk",
-    "likesCount": 0
-  }
-]
 
 ## Scalability Considerations
 ### Database
