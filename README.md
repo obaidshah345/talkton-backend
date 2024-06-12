@@ -74,6 +74,7 @@ This is the backend service for Talkton, a Twitter-like application where users 
 - **POST /api/timeline/:id/like**: Like a talk
 
 
+
 ## Scalability Considerations
 ### Database
 - **Current Setup**: Using a JSON file for simplicity and ease of setup.
