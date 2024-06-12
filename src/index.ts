@@ -1,12 +1,13 @@
 import express from "express";
 import http from "http";
 import cors from "cors";
+import { config } from "./config";
 import talkRoutes from "./routes/timelineRoutes";
 
 const app = express();
 const server = http.createServer(app);
 
-const PORT = process.env.PORT || 3000;
+const PORT = config.port;
 
 // Middleware
 app.use(express.json());

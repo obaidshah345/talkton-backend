@@ -2,14 +2,15 @@ import { Request, Response } from "express";
 import { readFileSync, writeFileSync } from "fs";
 import PusherServer from "pusher";
 import path from "path";
+import { config } from "../config";
 import { Talk } from "../types";
 
 // Initialize Pusher
 export const pusher = new PusherServer({
-  appId: "YOUR_APP_ID",
-  key: "YOUR_APP_KEY",
-  secret: "YOUR_APP_SECRET",
-  cluster: "YOUR_CLUSTER",
+  appId: config.pusherAppId!,
+  key: config.pusherKey!,
+  secret: config.pusherSecret!,
+  cluster: config.pusherCluster!,
   useTLS: true,
 });
 
